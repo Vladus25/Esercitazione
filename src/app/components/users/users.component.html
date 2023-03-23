@@ -1,0 +1,12 @@
+<div>
+    <div *ngIf= "user.eta<30" [ngStyle]="{'background-color': user.colore}">
+      <p>Nome:{{user.name}}</p>
+      <p *ngIf="showDescription">Cognome:{{user.cognome}}</p>
+      <p>Eta:{{user.eta}}</p>
+    </div>
+    <div *ngIf= "user.eta>30;" [ngStyle]="{'background-color': user.colore}" class="bold">
+      <p>Nome:{{user.name}}</p>
+      <p *ngIf="showDescription">Cognome:{{user.cognome}}</p>
+      <p>Eta:{{user.eta}}</p>
+    </div>
+</div>
